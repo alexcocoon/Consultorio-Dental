@@ -1,0 +1,120 @@
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #dbeafe 0%, #1e2a4a 100%);
+    color: #1e2a4a;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.caja-login {
+    display: flex;
+    width: 720px;
+    max-width: 90%;
+    background: #ffffff;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(30, 42, 74, 0.35);
+    overflow: hidden;
+    animation: aparecer 0.8s ease;
+}
+
+.lado-formulario {
+    width: 50%;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+.lado-imagen {
+    width: 50%;
+    padding: 40px;
+    box-sizing: border-box;
+    background: linear-gradient(160deg, #2f3f68 0%, #1e2a4a 100%);
+    color: #ffffff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.lado-imagen h2 {
+    color: #ffffff;
+}
+
+.diente-grande {
+    font-size: 90px;
+    margin: 0;
+}
+
+h2 {
+    color: #1e2a4a;
+    margin-top: 10px;
+}
+
+
+label {
+    display: block;
+    margin-top: 14px;
+    margin-bottom: 4px;
+    font-weight: bold;
+}
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid #b9c4de;
+    border-radius: 8px;
+    background: #f5f9ff;
+    font-size: 15px;
+    color: #1e2a4a;
+}
+
+.boton {
+    display: inline-block;
+    margin-top: 18px;
+    padding: 12px 22px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #2f3f68 0%, #1e2a4a 100%);
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.boton:hover {
+    background: linear-gradient(135deg, #3a4d80 0%, #2a3a63 100%);
+    transform: translateY(-2px);
+}
+
+.enlace {
+    display: inline-block;
+    margin-top: 14px;
+    color: #1e2a4a;
+}
+
+
+.error {
+    background: #ffe0e0;
+    border: 1px solid #a00000;
+    border-radius: 8px;
+    color: #a00000;
+    padding: 10px;
+    margin-top: 12px;
+}
