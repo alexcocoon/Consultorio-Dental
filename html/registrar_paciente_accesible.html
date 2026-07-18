@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Registrar paciente (modo accesible)</title>
+    <!-- Misma pagina pero con la hoja accesible del doctor -->
+    <link rel="stylesheet" href="../css/doctor_accesible.css">
+</head>
+<body>
+
+<div class="encabezado">
+    <div class="logo">
+        <img src="../img/logoF.png" alt="Logo del consultorio">
+        <h1>Consultorio Dental Sonrisa Sana</h1>
+    </div>
+    <div class="menu">
+        <a href="../php/inicio_doctor.php">Inicio</a>
+        <!-- Regresar al modo normal de este formulario -->
+        <a class="boton" href="registrar_paciente.html">Modo normal</a>
+    </div>
+</div>
+
+<div class="contenido">
+
+    <h2>Registrar paciente nuevo</h2>
+
+    <form method="POST" action="../php/guardar_paciente.php">
+
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" id="nombre" required>
+
+        <label for="apellido">Apellido:</label>
+        <input type="text" name="apellido" id="apellido" required>
+
+        <label for="telefono">Telefono:</label>
+        <input type="text" name="telefono" id="telefono">
+
+        <label for="correo">Correo:</label>
+        <input type="email" name="correo" id="correo">
+
+        <label for="fecha_nacimiento">Fecha de nacimiento:</label>
+        <input type="date" name="fecha_nacimiento" id="fecha_nacimiento">
+
+        <label for="precauciones">Precauciones:</label>
+        <textarea name="precauciones" id="precauciones"></textarea>
+
+        <label>
+            <input type="checkbox" name="crear_cuenta" value="si">
+            Crear tambien una cuenta para que el paciente entre al sistema
+        </label>
+
+        <label for="usuario">Usuario del paciente:</label>
+        <input type="text" name="usuario" id="usuario">
+
+        <label for="contraseña">contraseña del paciente:</label>
+        <input type="password" name="contraseña" id="contraseña">
+
+        <br>
+        <input class="boton" type="submit" value="Guardar paciente">
+        <a class="boton" href="../php/pacientes.php">Regresar</a>
+
+    </form>
+
+</div>
+
+<div class="pie">
+    <p>Correo del creador: <a href="mailto:guga080227mmczrla3@soycecytem.mx">guga080227mmczrla3@soycecytem.mx</a></p>
+    <p>Instagram del creador: <a href="https://www.instagram.com/kataba.koocon/">@kataba.koocon</a></p>
+    <p>&copy; 2026 Consultorio Dental Sonrisa Sana. Derechos de Alexia Guzman.</p>
+     <p>Curso de titulacion 2026</p>
+</div>
+
+</body>
+</html>
