@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Iniciar sesión (adaptado para daltonismo) - Consultorio Dental</title>
+    <link rel="stylesheet" href="css/index_accesible.css">
+</head>
+<body>
+
+    <div class="caja-login">
+
+        <div class="lado-formulario">
+
+            <img src="img/logoF.png" class="icono-grande" alt="Diente">
+            <h2>Accede a tu cuenta</h2>
+
+
+            <form method="POST" action="php/validar_login.php">
+
+                <label for="usuario">Usuario:</label>
+                <input type="text" name="usuario" id="usuario" required>
+
+                <label for="contraseña">Contraseña:</label>
+                <input type="password" name="contraseña" id="contraseña" required>
+
+                <br>
+                <input class="boton" type="submit" value="Entrar">
+            </form>
+            <a class="enlace" href="index.html">Versión estándar</a>
+
+        </div>
+        <div class="lado-imagen">
+            <img src="img/dentista.png" class="icono-grande" alt="Diente">
+
+            <p>
+                Esta versión utiliza una paleta de colores adaptada para mejorar
+                la visualización de personas con daltonismo.
+            </p>
+        </div>
+
+    </div>
+
+</body>
+</html>

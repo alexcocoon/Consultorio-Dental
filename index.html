@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Iniciar sesion - Consultorio Dental</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+
+    <div class="caja-login">
+
+        <div class="lado-formulario">
+
+            <img src="img/logoF.png" class="icono-grande" alt="Diente">
+            <h2>Accede a tu cuenta</h2>
+
+            <form method="POST" action="php/validar_login.php">
+
+                <label for="usuario">Usuario:</label>
+                <input type="text" name="usuario" id="usuario" required>
+
+                <label for="contraseña">Contraseña:</label>
+                <input type="password" name="contraseña" id="contraseña" required>
+
+                <br>
+                <input class="boton" type="submit" value="Entrar">
+            </form>
+
+            <a class="enlace" href="index_accesible.html">Modo accesible</a>
+
+        </div>
+        <div class="lado-imagen">
+            <img src="img/dentista.png" class="icono-grande" alt="Diente">
+            <h2>Consultorio Dental<br>Sonrisa Sana</h2>
+            <p>Cuidamos tu sonrisa con atencion personalizada.</p>
+        </div>
+
+    </div>
+
+</body>
+</html>
