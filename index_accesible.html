@@ -2,7 +2,8 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Iniciar sesión (adaptado para daltonismo) - Consultorio Dental</title>
+    <title>Iniciar sesion (modo accesible) - Consultorio Dental</title>
+  
     <link rel="stylesheet" href="css/index_accesible.css">
 </head>
 <body>
@@ -11,24 +12,25 @@
 
         <div class="lado-formulario">
 
-            <img src="img/logoF.png" class="icono-grande" alt="Diente">
+            <p class="diente-grande">&#129463;</p>
             <h2>Accede a tu cuenta</h2>
-
 
             <form method="POST" action="php/validar_login.php">
 
                 <label for="usuario">Usuario:</label>
                 <input type="text" name="usuario" id="usuario" required>
 
-                <label for="contraseña">Contraseña:</label>
-                <input type="password" name="contraseña" id="contraseña" required>
+                <label for="contrasena">Contrasena:</label>
+                <input type="password" name="contrasena" id="contrasena" required>
 
                 <br>
                 <input class="boton" type="submit" value="Entrar">
             </form>
-            <a class="enlace" href="index.html">Versión estándar</a>
+
+            <a class="enlace" href="index.html">Modo normal</a>
 
         </div>
+
         <div class="lado-imagen">
             <img src="img/dentista.png" class="icono-grande" alt="Diente">
 
