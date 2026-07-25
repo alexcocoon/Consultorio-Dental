@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Registrar paciente</title>
+    <link rel="stylesheet" href="../css/doctor.css">
+</head>
+<body>
+
+<div class="encabezado">
+    <div class="logo">
+        <img src="../img/logo.png" alt="Logo del consultorio">
+        <h1>Consultorio Dental Sonrisa Sana</h1>
+    </div>
+    <div class="menu">
+        <a href="../php/inicio_doctor.php">Inicio</a>
+        <a class="boton" href="registrar_paciente_accesible.html">Modo accesible</a>
+    </div>
+</div>
+
+<div class="contenido">
+
+    <h2>Registrar paciente nuevo</h2>
+
+    <!-- El formulario envia los datos por POST al procesador de la carpeta php -->
+    <form method="POST" action="../php/guardar_paciente.php">
+
+        <!-- Caja de texto -->
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" id="nombre" required>
+
+        <label for="apellido">Apellido:</label>
+        <input type="text" name="apellido" id="apellido" required>
+
+        <label for="telefono">Telefono:</label>
+        <input type="text" name="telefono" id="telefono">
+
+        <label for="correo">Correo:</label>
+        <input type="email" name="correo" id="correo">
+
+        <label for="fecha_nacimiento">Fecha de nacimiento:</label>
+        <input type="date" name="fecha_nacimiento" id="fecha_nacimiento">
+
+        <!-- Area de texto -->
+        <label for="Precauciones">Precauciones:</label>
+        <textarea name="Precauciones" id="Precauciones"></textarea>
+
+        <!-- Casilla de verificacion (checkbox) -->
+        <label>
+            <input type="checkbox" name="crear_cuenta" value="si">
+            Crear tambien una cuenta para que el paciente entre al sistema
+        </label>
+
+        <label for="usuario">Usuario del paciente:</label>
+        <input type="text" name="usuario" id="usuario">
+
+        <!-- Caja de contrasena -->
+        <label for="contrasena">Contrasena del paciente:</label>
+        <input type="password" name="contrasena" id="contrasena">
+
+        <br>
+        <input class="boton" type="submit" value="Guardar paciente">
+        <a class="boton" href="../php/pacientes.php">Regresar</a>
+
+    </form>
+
+</div>
+
+<!-- Pie de pagina -->
+<div class="pie">
+    <p>Correo del creador: <a href="mailto:guga080227mmczrla3@soycecytem.mx">guga080227mmczrla3@soycecytem.mx</a></p>
+    <p>Instagram del creador: <a href="https://www.instagram.com/kataba.koocon">@kataba.koocon</a></p>
+    <p>&copy; 2026 Consultorio Dental Sonrisa Sana. Todos los derechos reservados.</p>
+</div>
+
+</body>
+</html>
